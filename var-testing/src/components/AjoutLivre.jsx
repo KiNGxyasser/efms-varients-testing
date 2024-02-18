@@ -15,7 +15,7 @@ export default function AjoutLivre() {
 
     const AjouterLivre = ()=>{
 
-        if(num === "" ||titre === "" ||date === "" ||genre === "" || prix === "" || parseInt(prix) > 200){
+        if(num === "" ||titre === "" ||date === "" ||genre === "" || prix === "" || parseInt(prix) > 200 ||new Date() < new Date(date) || new Date("01-01-1945") > new Date(date)){
 
             alert("azerty")
             return;

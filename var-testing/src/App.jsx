@@ -1,5 +1,6 @@
 import {useDispatch , useSelector } from 'react-redux'
 import { useState } from 'react'
+import AjoutLivre from './components/AjoutLivre'
 
 function App() {
 
@@ -10,13 +11,13 @@ function App() {
 
   return (
       <div>
-
-        <p>count : {count}</p>
+        <AjoutLivre/>
+        {/* <p>count : {count}</p>
 
         <button onClick={()=>dispatch({type:"incr",payload:parseInt(incval)})} >+</button>
         <button onClick={()=>dispatch({type:"decr",payload:parseInt(incval)})} >-</button>
 
-        <input type="number" onChange={(e)=>setIncval(e.target.value)}/>
+        <input type="number" onChange={(e)=>setIncval(e.target.value)}/> */}
 
 
 
